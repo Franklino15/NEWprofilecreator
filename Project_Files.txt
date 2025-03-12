@@ -1,0 +1,13 @@
+crypto_airdrop_bot/
+├── bot/
+│   ├── __init__.py
+│   ├── email_creator.py
+│   ├── twitter_creator.py
+│   ├── referral_handler.py
+│   └── utils.py
+├── docs/
+│   └── README.md
+├── main.py
+├── requirements.txt
+├── Dockerfile
+└── .gitignore
