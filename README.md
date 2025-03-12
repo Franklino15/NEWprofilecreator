@@ -18,29 +18,32 @@ This repository contains a Python bot designed for crypto enthusiasts who hunt a
    git clone https://github.com/yourusername/NEWprofilecreator.git
    cd NEWprofilecreator
 2. Navigate to bot folder
-3.
-```bash
-mkdir bot  # Create the 'bot' folder
-touch bot/__init__.py  # Create an empty __init__.py file
-touch bot/email_creator.py bot/twitter_creator.py bot/referral_handler.py bot/utils.py
-touch main.py requirements.txt
+   
+3. **Paste this in the terminal:**
+ ```bash
+ mkdir bot  # Create the 'bot' folder
+ touch bot/__init__.py  # Create an empty __init__.py file
+ touch bot/email_creator.py bot/twitter_creator.py bot/referral_handler.py bot/utils.py
+ touch main.py requirements.txt
 
-5.
-```bash
-mv emailbot.py bot/email_creator.py
-mv twittercreator.py bot/twitter_creator.py
-mv referral_handler.py bot/referral_handler.py
-mv utils.py bot/utils.py
 
-6. TYPE  nano main.py and then paste this above the code
+ 4.**Now paste this in the terminal:**
+  ```bash
+  mv emailbot.py bot/email_creator.py
+  mv twittercreator.py bot/twitter_creator.py
+  mv referral_handler.py bot/referral_handler.py
+  mv utils.py bot/utils.py
+
+ 5. **TYPE 'nano main.py' and then paste this above the code:**
+
  import sys
-import os
+ import os
 
-# Add the current directory to Python's path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+ # Add the current directory to Python's path
+ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from bot import email_creator, twitter_creator, referral_handler, utils
-print("Bot is running...")  # Temporary test message
+ from bot import email_creator, twitter_creator, referral_handler, utils
+ print("Bot is running...")  # Temporary test message
 
 THEN CTRL X AND THEN Y
 
