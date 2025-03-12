@@ -17,16 +17,45 @@ This repository contains a Python bot designed for crypto enthusiasts who hunt a
    ```bash
    git clone https://github.com/yourusername/NEWprofilecreator.git
    cd NEWprofilecreator
+2. Navigate to bot folder
+3. mkdir bot  # Create the 'bot' folder
+touch bot/__init__.py  # Create an empty __init__.py file
+touch bot/email_creator.py bot/twitter_creator.py bot/referral_handler.py bot/utils.py
+touch main.py requirements.txt
 
-2.pip install -r requirements.txt
+4. mv emailbot.py bot/email_creator.py
+mv twittercreator.py bot/twitter_creator.py
+mv referral_handler.py bot/referral_handler.py
+mv utils.py bot/utils.py
 
-3.python main.py
+5. TYPE  nano main.py and then paste this above the code
+ import sys
+import os
 
-4. docker build -t NEWprofilecreator .
+# Add the current directory to Python's path
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from bot import email_creator, twitter_creator, referral_handler, utils
+print("Bot is running...")  # Temporary test message
+
+THEN CTRL X AND THEN Y
+
+
+6.pip install -r requirements.txt
+
+
+
+
+
+
+7.python main.py
+
+
+
+
+OPTIONAL
+docker build -t NEWprofilecreator .
 docker run -it NEWprofilecreator
-
-
-
 
 docker build -t crypto_airdrop_bot .
 docker run -it crypto_airdrop_bot
