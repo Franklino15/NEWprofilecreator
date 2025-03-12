@@ -15,15 +15,15 @@ This repository contains a Python bot designed for crypto enthusiasts who hunt a
 ## Setup Instructions
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/crypto_airdrop_bot.git
-   cd crypto_airdrop_bot
+   git clone https://github.com/yourusername/NEWprofilecreator.git
+   cd NEWprofilecreator
 
 2.pip install -r requirements.txt
 
 3.python main.py
 
-4. docker build -t crypto_airdrop_bot .
-docker run -it crypto_airdrop_bot
+4. docker build -t NEWprofilecreator .
+docker run -it NEWprofilecreator
 
 
 
